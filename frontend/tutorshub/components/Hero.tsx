@@ -1,4 +1,6 @@
+import MagicButton from './ui/MagicButton';
 import { Spotlight } from './ui/Spotlight';
+import { TextGenerateEffect } from './ui/text-generate-effect';
 
 const Hero = () => {
   return (
@@ -9,7 +11,7 @@ const Hero = () => {
             <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
         </div>
 
-        <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-dot-white/[0.3] bg-dot-black/[0.2] relative flex items-center justify-center">
+        <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-dot-white/[0.3] bg-dot-black/[0.2] flex items-center justify-center absolute top-0 left-0">
             
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"/>
         </div>
@@ -18,6 +20,18 @@ const Hero = () => {
                 <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                     Best Tutoring with Charles TutorsHub
                 </h2>
+                <TextGenerateEffect
+                    className="text-center text-40px md:text-5xl lg:text-6xl font-bold"
+                    words="Get the best tutoring experience with Charles TutorsHub. Your gateway to mastering Chemistry, Mathematics, Business and Accounting."
+                />
+                <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+                    Hi, I&apos; m Charles, a professional tutor with over 10 years of experience. I have a proven track record of helping students achieve their academic goals. Contact me today to schedule a tutoring session.
+                </p>
+                <a>
+                    <MagicButton
+                        title="Show my work"
+                    />
+                </a>
             </div>
 
         </div>
