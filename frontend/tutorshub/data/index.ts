@@ -28,3 +28,21 @@ export const gridItems = [
             img: '/accounting.svg',
         }
     ]
+
+    export const pricingPlans = [
+        {
+          name: 'Basic',
+          price: 50,
+          features: ['1-hour one-on-one session', 'Weekly homework review', 'Email support'],
+        },
+        {
+          name: 'Standard',
+          price: 100,
+          features: ['2-hour one-on-one session', 'Bi-weekly progress report', 'Practice exams', '24/7 email support'],
+        },
+        {
+          name: 'Premium',
+          price: 200,
+          features: ['4-hour one-on-one session', 'Weekly progress report', 'Customized study plan', 'Practice exams', '24/7 phone and email support'],
+        },
+      ]
