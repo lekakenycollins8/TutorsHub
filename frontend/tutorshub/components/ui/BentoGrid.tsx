@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Globe from "@/components/ui/Globe";
 
 export const BentoGrid = ({
     className,
@@ -35,7 +36,7 @@ export const BentoGridItem = ({
     return (
         <div
             className={cn(
-                "relative rounded-xl group shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-xl overflow-hidden p-6 bg-gradient-to-r from-purple-700 via-blue-900 to-blue-500 text-white",
+                "relative rounded-xl group shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-xl overflow-hidden p-6 bg-gradient-to-r from-purple-700 via-blue-700 to-blue-700 text-white",
                 className
             )}
         >
