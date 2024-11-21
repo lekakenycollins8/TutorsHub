@@ -4,7 +4,7 @@ import MagicButton from './ui/MagicButton';
 
 const Grid = () => {
     return (
-        <section id="about">
+        <section>
             <h1 className="text-4xl font-bold text-center mb-8 text-gray-800 dark:text-white">
                 Our Subjects
             </h1>
