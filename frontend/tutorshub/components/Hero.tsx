@@ -28,9 +28,9 @@ const Hero = () => {
                 <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
                     Hi, I&apos; m Charles, a professional tutor with over 10 years of experience. I have a proven track record of helping students achieve their academic goals. Contact me today to schedule a tutoring session.
                 </p>
-                <a href="#about">
+                <a href="/about">
                     <MagicButton
-                        title="Show my work"
+                        title="About me"
                         icon={<FaLocationArrow />}
                         position='right'
                     />
