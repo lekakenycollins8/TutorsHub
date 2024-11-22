@@ -11,13 +11,13 @@ export default function BlogPage() {
         <div className="text-center mb-16">
           <Typography 
             variant="h1" 
-            className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-600"
+            className="text-4xl mt-5 md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-blue-500 to-red-500"
           >
             Our Blog
           </Typography>
           <Typography 
             variant="subtitle1" 
-            className="text-gray-600 max-w-2xl mx-auto"
+            className="text-white-600 max-w-2xl mx-auto"
           >
             Discover insights, tutorials, and updates from our expert tutors
           </Typography>

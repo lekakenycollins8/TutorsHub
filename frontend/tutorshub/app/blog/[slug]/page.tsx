@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { ArrowBack } from '@mui/icons-material';
 import Link from 'next/link';
+import type { BlogPost } from "@/components/BlogCard";
 
 
 interface Props {
@@ -25,7 +26,7 @@ export default async function BlogPost({ params }: Props) {
   }
 
   return (
-    <main className="min-h-screen py-16 bg-gradient-to-b from-gray-50 to-white">
+    <main className="min-h-screen py-16 bg-gradient-to-b from-gray-100 to-white">
       <Container maxWidth="lg">
         <Box className="mb-8">
           <Link href="/blog">
@@ -69,10 +70,21 @@ export default async function BlogPost({ params }: Props) {
               />
             </div>
 
-            <div className="prose max-w-none">
-              <Typography variant="body1" className="text-gray-800 leading-relaxed whitespace-pre-wrap">
-                {post.content}
-              </Typography>
+            <div className="prose max-w-none mx-auto px-4 md:px-6 lg:px-8">
+                <Typography 
+                    variant="body1" 
+                    className="text-gray-800 leading-relaxed whitespace-pre-wrap text-justify tracking-normal"
+                    sx={{
+                    textAlign: 'justify',
+                    hyphens: 'auto',
+                    wordSpacing: '0.05em',
+                    '& > p': {
+                        marginBottom: '1.5em'
+                    }
+                    }}
+                >
+                    {post.content}
+                </Typography>
             </div>
           </div>
         </article>
