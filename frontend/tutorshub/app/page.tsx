@@ -4,6 +4,7 @@ import { FloatingNav } from "@/components/ui/FloatingNavBar";
 import PricingPage from "@/components/Pricing";
 import About from "@/components/About";
 import { FaHome, FaInfoCircle, FaDollarSign } from "react-icons/fa";
+import { FaBlog } from 'react-icons/fa6';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
           {name: 'Home', link: '/', icon: <FaHome />},
           { name: "About", link: "/about", icon: <FaInfoCircle /> },
           { name: "Pricing", link: "/#pricing", icon: <FaDollarSign /> },
+          { name: "Blog", link: '/blog', icon: <FaBlog />}
         ]} />
         <Hero />
         <Grid />
