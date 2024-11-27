@@ -15,11 +15,11 @@ interface Props {
 }
 
 export default async function BlogPost({ params }: Props) {
-  // Simulate async data fetching
-  const post = await new Promise((resolve) => {
-    const foundPost = blogPosts.find((post) => post.slug === params.slug);
-    resolve(foundPost);
-  });
+  // Wait for params to be available
+  const slug = await params.slug;
+  
+  // Find the post after params are available
+  const post = blogPosts.find((post) => post.slug === slug);
 
   if (!post) {
     notFound();
@@ -45,7 +45,7 @@ export default async function BlogPost({ params }: Props) {
               className="mb-4 bg-purple-100 text-purple-700"
             />
             
-            <Typography variant="h1" className="text-4xl font-bold mb-4">
+            <Typography variant="h1" className="text-4xl text-black font-bold mb-4">
               {post.title}
             </Typography>
             
@@ -73,14 +73,17 @@ export default async function BlogPost({ params }: Props) {
             <div className="prose max-w-none mx-auto px-4 md:px-6 lg:px-8">
                 <Typography 
                     variant="body1" 
-                    className="text-gray-800 leading-relaxed whitespace-pre-wrap text-justify tracking-normal"
+                    className="text-gray-800 leading-relaxed"
                     sx={{
-                    textAlign: 'justify',
-                    hyphens: 'auto',
-                    wordSpacing: '0.05em',
-                    '& > p': {
-                        marginBottom: '1.5em'
-                    }
+                        textAlign: 'justify',
+                        hyphens: 'auto',
+                        wordSpacing: '0.05em',
+                        lineHeight: '1.8',
+                        '& > p': {
+                            marginBottom: '1.5em',
+                            textAlign: 'justify',
+                            textJustify: 'inter-word'
+                        }
                     }}
                 >
                     {post.content}
