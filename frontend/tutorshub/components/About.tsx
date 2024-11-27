@@ -278,7 +278,7 @@ export default function About() {
                                             >
                                                 {institution.name}
                                             </Typography>
-                                            <Typography color="text.secondary" variant="body2">
+                                            <Typography color="text-white-60" variant="body2">
                                                 {institution.description}
                                             </Typography>
                                         </Stack>
@@ -305,7 +305,7 @@ export default function About() {
                                             <Typography variant="h7" sx={{ fontWeight: 'bold' }}>
                                                 {skill.title}
                                             </Typography>
-                                            <Typography color="text.secondary" variant="body1">
+                                            <Typography color="text-white-60" variant="body1">
                                                 {skill.description}
                                             </Typography>
                                             {skill.images.length > 0 && (
