@@ -68,10 +68,14 @@
 
 @layer base {
   * {
-    @apply border-border !scroll-smooth;
+    @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  section {
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   button {
     @apply active:outline-none;
