@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { TextField, Button, Box, Alert, Paper } from '@mui/material';
+import { TextField, Box, Alert, Paper } from '@mui/material';
 import { useForm } from '@formspree/react';
 
 export default function ContactForm() {
@@ -77,14 +77,18 @@ export default function ContactForm() {
             variant="outlined"
           />
           
-          <Button 
-            type="submit"
-            variant="contained"
-            disabled={state.submitting}
-            className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-3 px-6 rounded-lg hover:opacity-90 transition-opacity"
-          >
-            {state.submitting ? 'Sending...' : 'Send Message'}
-          </Button>
+          <Box className="flex justify-center pt-4">
+            <button
+              type="submit"
+              disabled={state.submitting}
+              className="relative inline-flex h-12 overflow-hidden rounded-lg p-[1px] focus:outline-none w-48 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                {state.submitting ? 'Sending...' : 'Send Message'}
+              </span>
+            </button>
+          </Box>
         </Box>
       </form>
     </Paper>
