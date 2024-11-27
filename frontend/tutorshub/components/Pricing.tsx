@@ -2,10 +2,10 @@ import { pricingPlans } from "@/data/index"
 
 export default function PricingPage() {
   return (
-    <div id="pricing" className="min-h-screen py-12 bg-black-100">
+    <div id="pricing" className="min-h-screen py-12 bg-background text-foreground">
       <div className="container mx-auto px-6">
         <h1 className="text-4xl font-bold text-center mb-8">Our Pricing Plans</h1>
-        <p className="text-xl text-center text-white-600 mb-12">Choose the plan that best fits your needs</p>
+        <p className="text-xl text-center text-white-60 mb-12">Choose the plan that best fits your needs</p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {pricingPlans.map((plan) => (
