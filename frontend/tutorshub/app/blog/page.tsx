@@ -11,7 +11,7 @@ export default function BlogPage() {
         <div className="text-center mb-16">
           <Typography 
             variant="h1" 
-            className="text-4xl mt-5 md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-blue-500 to-red-500"
+            className="text-4xl mt-7 md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-blue-500 to-red-500"
           >
             Our Blog
           </Typography>
