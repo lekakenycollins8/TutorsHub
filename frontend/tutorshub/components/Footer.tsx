@@ -139,7 +139,14 @@ const Footer = () => {
               </Typography>
             </Grid>
             <Grid item xs={12} md="auto">
-              <Stack direction="row" spacing={3} justifyContent="center" md-justifyContent="flex-end">
+              <Stack 
+                direction="row" 
+                spacing={3} 
+                justifyContent={{ 
+                  xs: "center",
+                  md: "flex-end"
+                }}
+              >
                 <Link href="/privacy" className="text-gray-400 hover:text-purple-400 text-sm">
                   Privacy Policy
                 </Link>
