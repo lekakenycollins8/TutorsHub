@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import Globe from "@/components/ui/Globe";
+import { IconType } from 'react-icons';
 
 export const BentoGrid = ({
     className,
@@ -26,12 +27,14 @@ export const BentoGridItem = ({
     description,
     topics,
     levels,
+    icon: Icon,
 }: {
     className?: string;
     title?: string | React.ReactNode;
     description?: string | React.ReactNode;
     topics?: string[];
     levels?: string[];
+    icon?: IconType;
 }) => {
     return (
         <div
@@ -41,10 +44,15 @@ export const BentoGridItem = ({
             )}
         >
             <div className="flex flex-col space-y-4">
-                {/* Title */}
-                <h3 className="text-lg font-semibold group-hover:text-yellow-300">
-                    {title}
-                </h3>
+                {/* Icon and Title Row */}
+                <div className="flex items-center gap-3">
+                    {Icon && (
+                        <Icon className="w-6 h-6 text-yellow-300" />
+                    )}
+                    <h3 className="text-lg font-semibold group-hover:text-yellow-300">
+                        {title}
+                    </h3>
+                </div>
 
                 {/* Description */}
                 <p className="text-sm text-white/80">
