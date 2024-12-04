@@ -28,14 +28,15 @@ const Hero = () => {
         <div className="flex justify-center relative my-20 z-20">
             <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
                 <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-                    Best Tutoring with Charles TutorsHub
+                    Best Tutoring at Chiva TutorHub
                 </h2>
                 <TextGenerateEffect
                     className="text-center text-40px md:text-5xl lg:text-6xl font-bold"
-                    words="Get the best tutoring experience with Charles TutorsHub. Your gateway to mastering Chemistry, Mathematics, Business and Accounting."
+                    words="Unlock Your Potential with Expert Tutoring in Chemistry, Math, Business & Accounting.
+                            At CHIVA Tutorhub, we provide personalized, results-driven tutoring to help you succeed in school and beyond. Let’s make learning your strength!"
                 />
                 <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                    Hi, I&apos; m Charles, a professional tutor with over 10 years of experience. I have a proven track record of helping students achieve their academic goals. Contact me today to schedule a tutoring session.
+                    Hi, I&apos; m Charles, a professional tutor at Chiva TutorHub with 10 years of experience.
                 </p>
                 <a href="/about">
                     <MagicButton
