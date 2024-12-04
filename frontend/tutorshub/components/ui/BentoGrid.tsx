@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import Globe from "@/components/ui/Globe";
 import { IconType } from 'react-icons';
 
 export const BentoGrid = ({
@@ -12,7 +11,7 @@ export const BentoGrid = ({
     return (
         <div
             className={cn(
-                "grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2 auto-rows-fr max-w-7xl mx-auto px-4 md:px-8",
+                "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
                 className
             )}
         >
@@ -32,51 +31,54 @@ export const BentoGridItem = ({
     className?: string;
     title?: string | React.ReactNode;
     description?: string | React.ReactNode;
-    topics?: string[];
+    topics?: { [key: string]: string[] }[];
     levels?: string[];
     icon?: IconType;
 }) => {
     return (
         <div
             className={cn(
-                "relative rounded-xl group shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-xl overflow-hidden p-6 bg-gradient-to-r from-purple-700 via-blue-700 to-blue-700 text-white",
+                "relative rounded-xl group transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl overflow-hidden bg-gradient-to-br from-purple-600 to-blue-600 text-white",
                 className
             )}
         >
-            <div className="flex flex-col space-y-4">
+            <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+            <div className="relative z-10 p-6 flex flex-col h-full">
                 {/* Icon and Title Row */}
-                <div className="flex items-center gap-3">
-                    {Icon && (
-                        <Icon className="w-6 h-6 text-yellow-300" />
-                    )}
-                    <h3 className="text-lg font-semibold group-hover:text-yellow-300">
-                        {title}
-                    </h3>
+                <div className="flex items-center gap-3 mb-4">
+                    {Icon && <Icon className="w-6 h-6 text-yellow-300 transition-transform duration-300 group-hover:scale-110" />}
+                    <h3 className="text-xl font-bold group-hover:text-yellow-300 transition-colors duration-300">{title}</h3>
                 </div>
 
                 {/* Description */}
-                <p className="text-sm text-white/80">
-                    {description}
-                </p>
+                <p className="text-sm text-white/90 mb-6">{description}</p>
 
                 {/* Topics */}
-                <div className="flex flex-wrap gap-2">
-                    {topics?.map((topic, idx) => (
-                        <span
-                            key={topic + idx}
-                            className="bg-blue-300 text-blue-900 text-xs font-medium px-2 py-1 rounded-full"
-                        >
-                            {topic}
-                        </span>
+                <div className="space-y-4 flex-grow">
+                    {topics?.map((category, idx) => (
+                        <div key={idx} className="space-y-2">
+                            {Object.entries(category).map(([categoryTitle, categoryTopics]) => (
+                                <div key={categoryTitle}>
+                                    <h4 className="text-sm font-bold text-yellow-300 mb-2">{categoryTitle}</h4>
+                                    <ul className="flex flex-wrap gap-2">
+                                        {categoryTopics.map((topic, idx) => (
+                                            <li key={topic + idx} className="inline-block bg-blue-500 bg-opacity-30 text-white text-xs font-medium px-2 py-1 rounded-full transition-all duration-300 hover:bg-opacity-50">
+                                                {topic}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
+                        </div>
                     ))}
                 </div>
 
                 {/* Levels */}
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mt-4">
                     {levels?.map((level, idx) => (
                         <span
                             key={level + idx}
-                            className="bg-green-300 text-green-900 text-xs font-medium px-2 py-1 rounded-full"
+                            className="bg-green-500 bg-opacity-30 text-white text-xs font-medium px-2 py-1 rounded-full transition-all duration-300 hover:bg-opacity-50"
                         >
                             {level}
                         </span>
@@ -86,3 +88,4 @@ export const BentoGridItem = ({
         </div>
     );
 };
+
