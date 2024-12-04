@@ -2,33 +2,194 @@ import { FaCalculator, FaFlask, FaCode, FaBook, FaGlobe } from 'react-icons/fa';
 export const gridItems = [
     {
         title: "Chemistry",
-        description: "Explore the world of atoms, molecules, and chemical reactions",
+        description: "I provide tutoring in both basic and advanced chemistry topics, covering fundamental principles as well as specialized areas. Some of the topics I teach include:",
         icon: FaFlask,
-        topics: ['General Chemistry', 'Organic Chemistry', 'Inorganic Chemistry', 'Physical Chemistry', 'Analytical Chemistry', 'Biochemistry', 'Environmental Chemistry', 'Medicinal Chemistry', 'Polymer Chemistry', 'Forensic Chemistry', 'Nuclear Chemistry', 'Quantum Chemistry'],
+        topics: [
+            {'General Chemistry': [
+                'Atomic Structure and the Periodic Table',
+                'Chemical Bonding (Ionic, Covalent, Metallic)',
+                'Stoichiometry and Mole Concept',
+                'Balancing Chemical Equations',
+                'States of Matter: Solids, Liquids, Gases',
+                'Acids and Bases: Properties, pH, Titration',
+                'Thermochemistry: Heat and Enthalpy',
+                'Chemical Kinetics and Reaction Rates',
+                'Chemical Equilibrium',
+                'Redox Reactions and Electrochemistry',
+            ]},
+            {'Organic Chemistry': [
+                'Structure and Bonding in Organic Molecules',
+                'Functional Groups (Alkanes, Alkenes, Alkynes, Alcohols, etc.)',
+                'Isomerism (Structural, Geometrical, Optical)',
+                'Nucleophilic Substitution and Elimination Reactions',
+                'Hydrocarbons and Their Derivatives',
+                'Aromatic Compounds and Benzene Reactions',
+                'Organic Reactions and Mechanisms',
+                'Synthesis and Analysis of Organic Compounds'
+            ]},
+            {'Inorganic Chemistry': [
+                'Transition Metals and Coordination Chemistry',
+                'Properties of Metals and Nonmetals',
+                'Oxidation States and Complexes',
+                'Periodicity and the Periodic Trends',
+                'Crystal Field Theory'
+            ]},
+            {'Biochemistry (Optional, Advanced)': [
+                'Structure and Function of Biomolecules (Proteins, Carbohydrates, Lipids, Nucleic Acids)',
+                'Enzyme Kinetics',
+                'Metabolic Pathways (Glycolysis, Krebs Cycle, etc.)',
+                'Protein Synthesis and Genetic Code'
+            ]},
+        ],
         levels: ['High School', 'College'],
         img: '/chemistry.svg',
-        },
-        {
+    },
+    {
             title: "Mathematics",
-            description: "Dive into the world of numbers, equations, and mathematical theories",
+            description: "Mathematics is essential for solving real-world problems. I cover a wide range of topics, from basic algebra to advanced calculus and statistics, including:",
             icon: FaCalculator,
-            topics: ['Algebra', 'Geometry', 'Trigonometry', 'Calculus', 'Statistics', 'Probability', 'Number Theory', 'Discrete Mathematics', 'Linear Algebra', 'Differential Equations', 'Real Analysis', 'Complex Analysis'],
+            topics: [
+                {'Algebra': [
+                    'Simplifying Expressions and Polynomials',
+                    'Solving Linear and Quadratic Equations',
+                    'Exponents and Radicals',
+                    'Factorization and Fractions',
+                    'Systems of Equations (Linear, Non-Linear)',
+                    'Inequalities and Absolute Value'
+                ]},
+                {'Geometry': [
+                    'Basic Geometric Shapes and Properties',
+                    'Perimeter, Area, and Volume of 2D and 3D Shapes',
+                    'Congruence and Similarity',
+                    'Theorems on Triangles, Circles, and Angles',
+                    'Coordinate Geometry and the Distance Formula',
+                    'Trigonometry: Sine, Cosine, Tangent, and their Applications'
+                ]},
+                {'Trigonometry': [
+                    'Trigonometric Ratios and Functions',
+                    'Unit Circle and Angle Measurement',
+                    'Solving Trigonometric Equations',
+                    'Graphing Trigonometric Functions',
+                    'Trigonometric Identities and Proofs'
+                ]},
+                {'Calculus': [
+                    'Limits and Continuity',
+                    'Differentiation: Rules, Applications (Slope, Tangents)',
+                    'Integration: Basic Techniques, Area under Curves',
+                    'Derivatives of Polynomials, Exponentials, and Trigonometric Functions',
+                    'Applications of Derivatives (Maxima, Minima, Optimization)',
+                    'Sequences and Series',
+                    'Multivariable Calculus (Partial Derivatives, Multiple Integrals)',
+                    'Differential Equations'
+                ]},
+                {'Statistics & Probability': [
+                    'Descriptive Statistics (Mean, Median, Mode, Standard Deviation)',
+                    'Probability Distributions (Binomial, Normal, etc.)',
+                    'Hypothesis Testing',
+                    'Combinatorics (Permutations and Combinations)',
+                    'Correlation and Regression Analysis'
+                ]}
+            ],            
             levels: ['High School', 'College'],
             img: '/maths.svg',
-        },
-        {
+    },
+    {
             title: "Business",
-            description: "Learn the fundamentals of business, management, and entrepreneurship",
+            description: "In Business studies, I offer tutoring in fundamental and advanced concepts that are essential for understanding business operations, strategy, and financial management:",
             icon: FaGlobe,
-            topics: ['Business Management', 'Marketing', 'Finance', 'Accounting', 'Entrepreneurship', 'Human Resources', 'Operations Management', 'Business Ethics', 'Strategic Management', 'International Business', 'Business Law', 'Economics'],
+            topics: [
+                {'Business Fundamentals': [
+                    'Introduction to Business and Entrepreneurship',
+                    'Business Structures (Sole Proprietorship, Partnership, Corporation)',
+                    'Marketing Principles and Strategies',
+                    'Business Communication and Negotiation',
+                    'Organizational Behavior',
+                    'Human Resource Management',
+                    'Leadership and Management Styles'
+                ]},
+                {'Management': [
+                    'Principles of Management',
+                    'Strategic Planning and Decision Making',
+                    'Business Operations and Efficiency',
+                    'Risk Management and Crisis Management',
+                    'Project Management: Planning, Execution, and Control',
+                    'Leadership and Motivation Theories',
+                    'Corporate Social Responsibility'
+                ]},
+                {'Marketing': [
+                    'Marketing Research and Consumer Behavior',
+                    'Marketing Mix (Product, Price, Place, Promotion)',
+                    'Brand Management and Digital Marketing',
+                    'Social Media Marketing and Advertising',
+                    'Market Segmentation and Targeting',
+                    'Public Relations and Corporate Communication'
+                ]},
+                {'Economics': [
+                    'Microeconomics (Supply and Demand, Elasticity, Market Structures)',
+                    'Macroeconomics (GDP, Inflation, Unemployment)',
+                    'International Trade and Global Economics',
+                    'Monetary and Fiscal Policy',
+                    'Economic Indicators and their Impact on Business'
+                ]},
+                {'Finance': [
+                    'Corporate Finance and Financial Analysis',
+                    'Time Value of Money and Investment Valuation',
+                    'Budgeting and Forecasting',
+                    'Financial Ratios and Performance Metrics',
+                    'Capital Structure and Financial Markets',
+                    'Risk and Return Analysis'
+                ]},
+                {'Business Law': [
+                    'Contract Law and Legal Aspects of Business',
+                    'Intellectual Property and Copyright Laws',
+                    'Business Ethics and Legal Issues in Management',
+                    'Consumer Protection and Employment Law'
+                ]}
+            ],
             levels: ['High School', 'College'],
             img: '/business.svg',
         },
         {
             title: "Accounting",
-            description: "Understand the principles of accounting and financial reporting",
+            description: "I offer tutoring in both financial and managerial accounting, helping students understand the principles and practices used in business accounting and finance.",
             icon: FaCode,
-            topics: ['Financial Accounting', 'Managerial Accounting', 'Tax Accounting', 'Auditing', 'Accounting Information Systems', 'Financial Reporting', 'Cost Accounting', 'Forensic Accounting', 'Governmental Accounting', 'Nonprofit Accounting', 'International Accounting', 'Accounting Ethics'],
+            topics: [
+                {'Financial Accounting': [
+                    'Introduction to Financial Statements (Balance Sheet, Income Statement, Cash Flow Statement)',
+                    'The Accounting Equation: Assets = Liabilities + Equity',
+                    'Journal Entries and Ledger Posting',
+                    'Accrual vs. Cash Accounting',
+                    'Depreciation and Amortization',
+                    'Bank Reconciliation and Trial Balance',
+                    'Inventory Valuation (FIFO, LIFO, Weighted Average)',
+                    'Accounting for Receivables and Payables',
+                    'Closing Entries and Adjusting Entries'
+                ]},
+                {'Managerial Accounting': [
+                    'Cost Behavior and Cost-Volume-Profit Analysis',
+                    'Budgeting and Variance Analysis',
+                    'Break-even Analysis',
+                    'Standard Costing and Activity-Based Costing (ABC)',
+                    'Job Order and Process Costing',
+                    'Financial Decision Making and Capital Budgeting (NPV, IRR)',
+                    'Budget Preparation and Forecasting'
+                ]},
+                {'Corporate Accounting': [
+                    'Consolidated Financial Statements',
+                    'Stockholders’ Equity and Dividends',
+                    'Earnings Per Share (EPS) Calculation',
+                    'Accounting for Leases and Pensions',
+                    'Taxation and Deferred Taxes',
+                    'Accounting for Mergers and Acquisitions'
+                ]},
+                {'Auditing and Ethics': [
+                    'Principles of Auditing',
+                    'Internal Controls and Risk Management',
+                    'Ethical Standards in Accounting',
+                    'Auditor\'s Reports and Assurance Services',
+                    'Fraud Detection and Prevention'
+                ]}
+            ],
             levels: ['High School', 'College'],
             img: '/accounting.svg',
         }
@@ -37,24 +198,24 @@ export const gridItems = [
     export const pricingPlans = [
         {
           name: 'Basic',
-          price: 50,
+          price: '10/hr',
           features: ['1-hour one-on-one session', 'Weekly homework review', 'Email support'],
         },
         {
           name: 'Standard',
-          price: 100,
-          features: ['2-hour one-on-one session', 'Bi-weekly progress report', 'Practice exams', '24/7 email support'],
+          price: '40/week',
+          features: ['one-on-one session', 'Weekly homework review', 'Study materials', '24/7 email support'],
         },
         {
           name: 'Premium',
-          price: 200,
-          features: ['4-hour one-on-one session', 'Weekly progress report', 'Customized study plan', 'Practice exams', '24/7 phone and email support'],
+          price: '80/month',
+          features: ['Weekly progress report', 'Customized study plan', 'Practice exams', '24/7 phone and email support'],
         },
       ]
 
 export const person = {
-    firstName: 'Charles',
-    lastName:  'Ochieng',
+    firstName: 'Chiva',
+    lastName:  'TutorHub',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
@@ -68,24 +229,19 @@ export const social = [
     // Links are automatically displayed.
     // Import new icons in /once-ui/icons.ts
     {
-        name: 'GitHub',
-        icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        name: 'Instagram',
+        icon: 'instagram',
+        link: 'https://www.instagram.com/chiva_tutorhub/profilecard/?igsh=eGRsaHhkN2Y4eDls',
     },
     {
-        name: 'LinkedIn',
-        icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
-    },
-    {
-        name: 'X',
-        icon: 'x',
-        link: '',
+        name: 'Mobile',
+        icon: 'mobile',
+        link: 'tel:+254719575186',
     },
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:essayassignments23@gmail.com',
     },
 ]
 
@@ -103,43 +259,23 @@ export const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: "As a dedicated educator with over 8 years of experience, I specialize in creating personalized learning experiences that help students achieve their academic goals. My teaching philosophy combines traditional methods with modern technology to ensure maximum engagement and understanding."
+        description: "As the founder and lead tutor at CHIVA Tutorhub, I bring 10 years of professional tutoring experience and a solid academic foundation in the subjects I teach. I am passionate about helping students understand the content and develop the critical thinking skills and confidence they need to succeed academically and in real-world applications.\n\nMy approach is centered around clear communication, active engagement, and problem-solving, creating a supportive learning environment that fosters growth and mastery."
     },
     work: {
         display: true,
-        title: 'Teaching Experience',
+        title: 'Tutoring Experience',
         experiences: [
             {
-                company: 'Elite Academic Tutoring',
-                timeframe: '2020 - Present',
-                role: 'Senior Mathematics & Science Tutor',
+                company: 'Chiva TutorHub',
+                timeframe: '2009 - Present',
+                role: 'Professional Tutor',
                 achievements: [
-                    "Successfully helped over 200 students improve their grades by an average of 2 letter grades",
-                    "Developed customized study plans that led to 95% of students meeting or exceeding their target scores",
-                    "Implemented innovative teaching methods using digital tools, resulting in 40% better student engagement",
-                    "Specialized in SAT/ACT prep with students achieving an average score improvement of 200+ points"
+                    "Over 10 years of tutoring experience in Chemistry, Mathematics, Business, and Accounting",
+                    "Helped students improve grades by 80% or more, with many students achieving A/B grades in final exams",
+                    "Extensive experience with both high school and college-level students",
+                    "Proven success in exam preparation, homework support, and concept mastery across a variety of curricula"
                 ],
-                images: [
-                    {
-                        src: '/maths.svg',
-                        alt: 'Interactive Math Session',
-                        width: 16,
-                        height: 9
-                    }
-                ]
             },
-            {
-                company: 'City Learning Center',
-                timeframe: '2016 - 2020',
-                role: 'Lead Academic Tutor',
-                achievements: [
-                    "Mentored over 150 students in mathematics, physics, and chemistry",
-                    "Created comprehensive study materials that were adopted center-wide",
-                    "Maintained a 98% student satisfaction rate with documented improvement",
-                    "Conducted group study sessions that improved collaborative learning outcomes"
-                ],
-                images: []
-            }
         ]
     },
     studies: {
@@ -148,15 +284,15 @@ export const about = {
         institutions: [
             {
                 name: 'University of Education',
-                description: "Master's in Education with focus on STEM Teaching Methods",
+                description: "•	Master’s degree in Organic chemistry and basic mathematics",
             },
             {
                 name: 'State University',
-                description: "Bachelor's in Mathematics with minor in Physics",
+                description: "•	Bachelor’s degree in education science",
             },
             {
                 name: 'Professional Certifications',
-                description: "Certified Advanced Tutor (CAT), Licensed Mathematics Educator",
+                description: "•	Certified Accounting Professional •	Certified Professional Tutor in Business",
             }
         ]
     },
@@ -167,51 +303,49 @@ export const about = {
             {
                 title: 'Mathematics',
                 description: "Expert in Algebra, Calculus, Geometry, and Advanced Mathematics with proven success in helping students master complex concepts.",
-                images: [
-                    {
-                        src: '/maths.svg',
-                        alt: 'Mathematics Teaching Materials',
-                        width: 16,
-                        height: 9
-                    }
-                ]
             },
             {
-                title: 'Science Subjects',
-                description: "Specialized in Physics and Chemistry tutoring with hands-on experimental approach to learning.",
-                images: [
-                    {
-                        src: '/accounting.svg',
-                        alt: 'Science Lab Session',
-                        width: 16,
-                        height: 9
-                    }
-                ]
+                title: 'Chemistry',
+                description: "Specialized in Chemistry tutoring with hands-on experimental approach to learning.",
             },
             {
-                title: 'Test Preparation',
-                description: "Comprehensive preparation for SAT, ACT, AP exams, and other standardized tests with proven success strategies.",
-                images: [
-                    {
-                        src: '/business.svg',
-                        alt: 'Test Preparation Session',
-                        width: 16,
-                        height: 9
-                    }
-                ]
+                title: 'Business',
+                description: "Business strategy, marketing, management, and economics.",
             },
             {
-                title: 'Online Teaching Tools',
-                description: "Proficient in virtual learning platforms, digital whiteboarding, and interactive educational software for engaging remote sessions.",
-                images: [
-                    {
-                        src: '/business.svg',
-                        alt: 'Online Teaching Tools',
-                        width: 16,
-                        height: 9
-                    }
-                ]
+                title: 'Accounting',
+                description: "Financial accounting, managerial accounting, and corporate finance.",
             }
         ]
-    }
+    },
+    tutoringPhilosophy: {
+        display: true,
+        title: 'Tutoring Philosophy',
+        description: [
+            "I believe in personalized learning that adapts to each student's individual needs.",
+            "My goal is to break down complex concepts into understandable, manageable parts, ensuring that each student feels confident and empowered.",
+            "I use a variety of teaching techniques, including:",
+            "• Interactive problem-solving to reinforce theoretical knowledge",
+            "• Real-world applications to connect academic content with practical skills",
+            "• Focused one-on-one attention to address specific learning gaps",
+            "• Ongoing progress assessments to track improvements and adjust the learning plan",
+            "I aim to make every session engaging, motivating, and focused on your academic goals.",
+            "Whether you're preparing for exams, tackling difficult assignments, or simply looking to improve your understanding of key concepts, I’m here to support you every step of the way."
+        ]
+    },
+    whyChoose: {
+        display: true,
+        title: 'Why Choose CHIVA Tutorhub?',
+        description: [
+            "• Expert Tutoring: I have an in-depth understanding of the subjects I teach, backed by years of academic study and hands-on tutoring experience.",
+            "• Tailored Approach: Every student has unique learning needs. I provide customized tutoring plans to fit your learning style and goals.",
+            "• Proven Success: My students consistently achieve higher grades and improve their understanding of complex concepts.",
+            "• Flexible Sessions: Online and in-person tutoring options that fit your schedule and needs."
+        ]
+    },
+    goals: {
+        display: true,
+        title: 'Let’s Achieve Your Academic Goals Together',
+        description: `At CHIVA Tutorhub, I am committed to helping students unlock their full potential. Whether you are struggling with difficult concepts or aiming for top grades, I’m here to help you succeed. Let’s work together to make learning enjoyable and effective!`
+    },
 };

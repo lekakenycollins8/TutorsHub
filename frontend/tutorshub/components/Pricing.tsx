@@ -11,7 +11,7 @@ export default function PricingPage() {
           {pricingPlans.map((plan) => (
             <div key={plan.name} className="bg-white rounded-lg shadow-md p-8">
               <h2 className="text-2xl font-bold mb-4 text-black">{plan.name}</h2>
-              <p className="text-4xl text-black-100 font-bold mb-6">${plan.price}<span className="text-xl font-normal">/session</span></p>
+              <p className="text-4xl text-black-100 font-bold mb-6">${plan.price}<span className="text-xl font-normal"></span></p>
               <ul className="mb-8">
                 {plan.features.map((feature) => (
                   <li key={feature} className="mb-2 flex items-center text-black-100">
@@ -28,7 +28,7 @@ export default function PricingPage() {
 
         <div className="mt-12 text-center">
           <h2 className="text-2xl font-bold mb-4">Payment Methods</h2>
-          <p className="text-blue-500">We accept all major credit cards, PayPal, and bank transfers.</p>
+          <p className="text-blue-500">We accept all major credit cards, PayPal, Payoneer, Wise and bank transfers.</p>
         </div>
       </div>
     </div>
