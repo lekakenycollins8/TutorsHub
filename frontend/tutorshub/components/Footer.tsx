@@ -2,7 +2,7 @@
 
 import { Container, Grid, Typography, Box, IconButton, Stack } from '@mui/material';
 import Link from 'next/link';
-import { FaTwitter, FaLinkedin, FaYoutube, FaEnvelope } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaPhone, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -35,7 +35,7 @@ const Footer = () => {
           {/* Brand Section */}
           <Grid item xs={12} md={4}>
             <Typography variant="h6" className="font-bold mb-4">
-              Charles TutorsHub
+              Chiva TutorsHub
             </Typography>
             <Typography variant="body2" className="text-gray-300 mb-4">
               Empowering students through personalized tutoring in Chemistry, Mathematics, 
@@ -43,28 +43,21 @@ const Footer = () => {
             </Typography>
             <Stack direction="row" spacing={2}>
               <IconButton 
-                href="https://twitter.com/charlestutors" 
+                href="https://www.instagram.com/chiva_tutorhub/profilecard/?igsh=eGRsaHhkN2Y4eDls" 
                 target="_blank"
                 className="text-gray-300 hover:text-purple-400 transition-colors"
               >
-                <FaTwitter />
+                <FaInstagram />
               </IconButton>
               <IconButton 
-                href="https://linkedin.com/in/charlestutors" 
+                href="tel:+254719575186" 
                 target="_blank"
                 className="text-gray-300 hover:text-purple-400 transition-colors"
               >
-                <FaLinkedin />
+                <FaPhone />
               </IconButton>
               <IconButton 
-                href="https://youtube.com/@charlestutors" 
-                target="_blank"
-                className="text-gray-300 hover:text-purple-400 transition-colors"
-              >
-                <FaYoutube />
-              </IconButton>
-              <IconButton 
-                href="mailto:contact@charlestutorshub.com"
+                href="mailto:essayassignments23@gmail.com"
                 className="text-gray-300 hover:text-purple-400 transition-colors"
               >
                 <FaEnvelope />
@@ -135,7 +128,7 @@ const Footer = () => {
           <Grid container spacing={2} justifyContent="space-between" alignItems="center">
             <Grid item xs={12} md="auto">
               <Typography variant="body2" className="text-gray-400 text-center md:text-left">
-                © {currentYear} Charles TutorsHub. All rights reserved.
+                © {currentYear} Chiva TutorHub. All rights reserved.
               </Typography>
             </Grid>
             <Grid item xs={12} md="auto">
