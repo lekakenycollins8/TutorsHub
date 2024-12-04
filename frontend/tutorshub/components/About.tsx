@@ -9,7 +9,6 @@ import {
     Stack,
     Typography,
     Chip,
-    IconButton
 } from '@mui/material';
 import Image from 'next/image';
 import TableOfContents from './AboutTableofContents';
@@ -164,6 +163,12 @@ export default function About() {
                             )}
                         </Box>
 
+                        <Typography
+                            variant="h5"
+                            sx={{ mb: 2, fontWeight: 'bold' }}
+                        >
+                            Meet Your Tutor: Charles. O.O
+                        </Typography>
                         {about.intro.display && (
                             <Typography
                                 variant="body1"
@@ -193,7 +198,7 @@ export default function About() {
                                             >
                                                 <Typography
                                                     id={experience.company}
-                                                    variant="h3"
+                                                    variant="h4"
                                                     sx={{ fontWeight: 'bold' }}
                                                 >
                                                     {experience.company}
@@ -220,36 +225,7 @@ export default function About() {
                                                     </Typography>
                                                 ))}
                                             </Stack>
-                                            {experience.images.length > 0 && (
-                                                <Stack
-                                                    direction="row"
-                                                    flexWrap="wrap"
-                                                    sx={{ pt: 2, pl: 5 }}
-                                                    spacing={1.5}
-                                                >
-                                                    {experience.images.map((image, index) => (
-                                                        <Box
-                                                            key={index}
-                                                            sx={{
-                                                                border: 1,
-                                                                borderColor: 'divider',
-                                                                borderRadius: 1,
-                                                                overflow: 'hidden',
-                                                                width: image.width,
-                                                                height: image.height,
-                                                                position: 'relative'
-                                                            }}
-                                                        >
-                                                            <Image
-                                                                fill
-                                                                style={{ objectFit: 'cover' }}
-                                                                alt={image.alt}
-                                                                src={image.src}
-                                                            />
-                                                        </Box>
-                                                    ))}
-                                                </Stack>
-                                            )}
+                                            
                                         </Stack>
                                     ))}
                                 </Stack>
@@ -308,39 +284,63 @@ export default function About() {
                                             <Typography color="text-white-60" variant="body1">
                                                 {skill.description}
                                             </Typography>
-                                            {skill.images.length > 0 && (
-                                                <Stack
-                                                    direction="row"
-                                                    flexWrap="wrap"
-                                                    spacing={1.5}
-                                                    sx={{ pt: 2 }}
-                                                >
-                                                    {skill.images.map((image, index) => (
-                                                        <Box
-                                                            key={index}
-                                                            sx={{
-                                                                border: 1,
-                                                                borderColor: 'divider',
-                                                                borderRadius: 1,
-                                                                overflow: 'hidden',
-                                                                width: image.width,
-                                                                height: image.height,
-                                                                position: 'relative'
-                                                            }}
-                                                        >
-                                                            <Image
-                                                                fill
-                                                                style={{ objectFit: 'cover' }}
-                                                                alt={image.alt}
-                                                                src={image.src}
-                                                            />
-                                                        </Box>
-                                                    ))}
-                                                </Stack>
-                                            )}
                                         </Stack>
                                     ))}
                                 </Stack>
+                            </>
+                        )}
+                        {about.tutoringPhilosophy.display && (
+                            <>
+                                <Typography
+                                    variant="h2"
+                                    id={about.tutoringPhilosophy.title}
+                                    sx={{ mt: 5, mb: 2, fontSize: '1.5rem', fontWeight: 'bold' }}
+                                >
+                                    {about.tutoringPhilosophy.title}
+                                </Typography>
+                                <Stack spacing={1} sx={{ mb: 4 }}>
+                                    {about.tutoringPhilosophy.description.map((line, index) => (
+                                        <Typography key={index} variant="body1">
+                                            {line}
+                                        </Typography>
+                                    ))}
+                                </Stack>
+                            </>
+                        )}
+
+                        {/* Why Choose CHIVA Tutorhub Section */}
+                        {about.whyChoose.display && (
+                            <>
+                                <Typography
+                                    variant="h2"
+                                    id={about.whyChoose.title}
+                                    sx={{ mb: 2, fontSize: '1.5rem', fontWeight: 'bold' }}
+                                >
+                                    {about.whyChoose.title}
+                                </Typography>
+                                <Stack spacing={1} sx={{ mb: 4 }}>
+                                    {about.whyChoose.description.map((line, index) => (
+                                        <Typography key={index} variant="body1">
+                                            {line}
+                                        </Typography>
+                                    ))}
+                                </Stack>
+                            </>
+                        )}
+
+                        {/* Goals Section */}
+                        {about.goals.display && (
+                            <>
+                                <Typography
+                                    variant="h2"
+                                    id={about.goals.title}
+                                    sx={{ mb: 2, fontSize: '1.5rem', fontWeight: 'bold' }}
+                                >
+                                    {about.goals.title}
+                                </Typography>
+                                <Typography variant="body1" sx={{ mb: 4 }}>
+                                    {about.goals.description}
+                                </Typography>
                             </>
                         )}
                     </Stack>
