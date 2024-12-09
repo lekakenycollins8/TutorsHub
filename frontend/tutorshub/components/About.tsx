@@ -248,8 +248,8 @@ export default function About() {
                                         >
                                             <Typography
                                                 id={institution.name}
-                                                variant="h7"
-                                                sx={{ fontWeight: 'bold' }}
+                                                variant="subtitle1"
+                                                sx={{ fontWeight: 'bold', fontSize: '1rem' }}
                                             >
                                                 {institution.name}
                                             </Typography>
@@ -277,7 +277,7 @@ export default function About() {
                                             key={`${skill}-${index}`}
                                             spacing={0.5}
                                         >
-                                            <Typography variant="h7" sx={{ fontWeight: 'bold' }}>
+                                            <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>
                                                 {skill.title}
                                             </Typography>
                                             <Typography color="text-white-60" variant="body1">

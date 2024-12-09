@@ -2,6 +2,7 @@ import { BentoGrid, BentoGridItem } from './ui/BentoGrid';
 import { gridItems } from '@/data/index';
 import MagicButton from './ui/MagicButton';
 import { BackgroundBeams } from './ui/BackgroundBeams';
+import { FaLocationArrow } from 'react-icons/fa';
 
 const Grid = () => {
     return (
@@ -35,6 +36,7 @@ const Grid = () => {
                     <a href="/contact">
                         <MagicButton
                             title="Contact Us Now"
+                            icon={<FaLocationArrow/>}
                             position="right"
                         />
                     </a>

@@ -5,21 +5,18 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { ArrowBack } from '@mui/icons-material';
 import Link from 'next/link';
-import type { BlogPost } from "@/components/BlogCard";
 
 interface PageParams {
   slug: string;
 }
 
 interface Props {
-  params: PageParams;
+  params: Promise<PageParams>;
 }
 
-
-export default async function BlogPost({ 
-  params: { slug },
-}: Props) {
-  const post = blogPosts.find((post) => post.slug === slug);
+const BlogPost = async ({ params }: Props) => {
+  const resolvedParams = await params;
+  const post = blogPosts.find((post) => post.slug === resolvedParams.slug);
 
   if (!post) {
     notFound();
@@ -95,3 +92,5 @@ export default async function BlogPost({
     </main>
   );
 }
+
+export default BlogPost;

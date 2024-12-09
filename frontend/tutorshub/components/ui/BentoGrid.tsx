@@ -1,6 +1,11 @@
 import { cn } from "@/lib/utils";
 import { IconType } from 'react-icons';
 
+interface Topic {
+    title: string;
+    details: string[];
+}
+
 export const BentoGrid = ({
     className,
     children,
@@ -24,14 +29,14 @@ export const BentoGridItem = ({
     className,
     title,
     description,
-    topics,
-    levels,
+    topics = [],
+    levels = [],
     icon: Icon,
 }: {
     className?: string;
     title?: string | React.ReactNode;
     description?: string | React.ReactNode;
-    topics?: { [key: string]: string[] }[];
+    topics?: Topic[];
     levels?: string[];
     icon?: IconType;
 }) => {
@@ -55,27 +60,26 @@ export const BentoGridItem = ({
 
                 {/* Topics */}
                 <div className="space-y-4 flex-grow">
-                    {topics?.map((category, idx) => (
+                    {topics.map((topic, idx) => (
                         <div key={idx} className="space-y-2">
-                            {Object.entries(category).map(([categoryTitle, categoryTopics]) => (
-                                <div key={categoryTitle}>
-                                    <h4 className="text-sm font-bold text-yellow-300 mb-2">{categoryTitle}</h4>
-                                    <ul className="flex flex-wrap gap-2">
-                                        {categoryTopics.map((topic, idx) => (
-                                            <li key={topic + idx} className="inline-block bg-blue-500 bg-opacity-30 text-white text-xs font-medium px-2 py-1 rounded-full transition-all duration-300 hover:bg-opacity-50">
-                                                {topic}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
+                            <h4 className="text-sm font-bold text-yellow-300 mb-2">{topic.title}</h4>
+                            <ul className="flex flex-wrap gap-2">
+                                {topic.details.map((detail, detailIdx) => (
+                                    <li
+                                        key={`${detail}-${detailIdx}`}
+                                        className="inline-block bg-blue-500 bg-opacity-30 text-white text-xs font-medium px-2 py-1 rounded-full transition-all duration-300 hover:bg-opacity-50"
+                                    >
+                                        {detail}
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     ))}
                 </div>
 
                 {/* Levels */}
                 <div className="flex flex-wrap gap-2 mt-4">
-                    {levels?.map((level, idx) => (
+                    {levels.map((level, idx) => (
                         <span
                             key={level + idx}
                             className="bg-green-500 bg-opacity-30 text-white text-xs font-medium px-2 py-1 rounded-full transition-all duration-300 hover:bg-opacity-50"
@@ -88,4 +92,3 @@ export const BentoGridItem = ({
         </div>
     );
 };
-
