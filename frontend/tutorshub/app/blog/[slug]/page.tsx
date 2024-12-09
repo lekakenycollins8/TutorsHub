@@ -7,18 +7,18 @@ import { ArrowBack } from '@mui/icons-material';
 import Link from 'next/link';
 import type { BlogPost } from "@/components/BlogCard";
 
-
-interface Props {
-  params: {
-    slug: string;
-  };
+interface PageParams {
+  slug: string;
 }
 
-export default async function BlogPost({ params }: Props) {
-  // Wait for params to be available
-  const slug = await params.slug;
-  
-  // Find the post after params are available
+interface Props {
+  params: PageParams;
+}
+
+
+export default async function BlogPost({ 
+  params: { slug },
+}: Props) {
   const post = blogPosts.find((post) => post.slug === slug);
 
   if (!post) {

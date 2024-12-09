@@ -2,7 +2,7 @@
 
 import { Container, Grid, Typography, Box, IconButton, Stack } from '@mui/material';
 import Link from 'next/link';
-import { FaInstagram, FaLinkedin, FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaInstagram, FaPhone, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

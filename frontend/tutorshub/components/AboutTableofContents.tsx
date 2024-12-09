@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { Box, Stack, Typography } from '@mui/material';
-import styles from '@/components/styles/about.module.css';
 
 interface TableOfContentsProps {
     structure: {

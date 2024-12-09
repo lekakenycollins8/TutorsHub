@@ -17,12 +17,12 @@ export default function ContactPage() {
               >
                 Contact Us
               </Typography>
-              <Typography 
+                <Typography 
                 variant="subtitle1" 
                 className="text-gray-600 max-w-2xl mx-auto"
-              >
-                Have questions? We'd love to hear from you.
-              </Typography>
+                >
+                Have questions? We&apos;d love to hear from you.
+                </Typography>
             </div>
             <FloatingNav navItems={[
               {name: 'Home', link: '/', icon: <FaHome />},

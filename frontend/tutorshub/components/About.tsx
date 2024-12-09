@@ -10,7 +10,6 @@ import {
     Typography,
     Chip,
 } from '@mui/material';
-import Image from 'next/image';
 import TableOfContents from './AboutTableofContents';
 import { renderContent } from '@/data/renderContent';
 import styles from '@/components/styles/about.module.css';

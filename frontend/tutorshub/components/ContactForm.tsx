@@ -24,7 +24,7 @@ export default function ContactForm() {
     return (
       <Box className="max-w-2xl mx-auto">
         <Alert severity="success" className="mb-4">
-          Thanks for reaching out! We'll get back to you soon.
+          Thanks for reaching out! We&apos;ll get back to you soon.
         </Alert>
       </Box>
     );
