@@ -46,6 +46,7 @@ const Footer = () => {
                 href="https://www.instagram.com/chiva_tutorhub/profilecard/?igsh=eGRsaHhkN2Y4eDls" 
                 target="_blank"
                 className="text-gray-300 hover:text-purple-400 transition-colors"
+                aria-label="Instagram"
               >
                 <FaInstagram />
               </IconButton>
@@ -53,12 +54,14 @@ const Footer = () => {
                 href="tel:+254719575186" 
                 target="_blank"
                 className="text-gray-300 hover:text-purple-400 transition-colors"
+                aria-label="Phone"
               >
                 <FaPhone />
               </IconButton>
               <IconButton 
                 href="mailto:essayassignments23@gmail.com"
                 className="text-gray-300 hover:text-purple-400 transition-colors"
+                aria-label="Email"
               >
                 <FaEnvelope />
               </IconButton>

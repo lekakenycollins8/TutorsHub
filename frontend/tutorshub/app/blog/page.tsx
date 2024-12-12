@@ -9,18 +9,18 @@ export default function BlogPage() {
     <main className="min-h-screen bg-gradient-to-b from-black-100 to-purple-500 py-16">
       <Container maxWidth="lg">
         <div className="text-center mb-16">
-          <Typography 
-            variant="h1" 
-            className="text-4xl mt-7 md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-blue-500 to-red-500"
-          >
+            <Typography 
+            variant="h2" 
+            className="text-3xl mt-7 md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-blue-500 to-red-500"
+            >
             Our Blog
-          </Typography>
-          <Typography 
+            </Typography>
+            <Typography 
             variant="subtitle1" 
-            className="text-white-600 max-w-2xl mx-auto"
-          >
+            className="text-white-600 max-w-2xl mx-auto text-center"
+            >
             Discover insights, tutorials, and updates from our expert tutors
-          </Typography>
+            </Typography>
         </div>
         <FloatingNav navItems={[
           {name: 'Home', link: '/', icon: <FaHome />},
