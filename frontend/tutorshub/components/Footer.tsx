@@ -2,7 +2,9 @@
 
 import { Container, Grid, Typography, Box, IconButton, Stack } from '@mui/material';
 import Link from 'next/link';
-import { FaInstagram, FaPhone, FaEnvelope } from 'react-icons/fa';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -48,7 +50,7 @@ const Footer = () => {
                 className="text-gray-300 hover:text-purple-400 transition-colors"
                 aria-label="Instagram"
               >
-                <FaInstagram />
+                <InstagramIcon />
               </IconButton>
               <IconButton 
                 href="tel:+254719575186" 
@@ -56,14 +58,14 @@ const Footer = () => {
                 className="text-gray-300 hover:text-purple-400 transition-colors"
                 aria-label="Phone"
               >
-                <FaPhone />
+                <PhoneIcon />
               </IconButton>
               <IconButton 
                 href="mailto:essayassignments23@gmail.com"
                 className="text-gray-300 hover:text-purple-400 transition-colors"
                 aria-label="Email"
               >
-                <FaEnvelope />
+                <EmailIcon />
               </IconButton>
             </Stack>
           </Grid>
