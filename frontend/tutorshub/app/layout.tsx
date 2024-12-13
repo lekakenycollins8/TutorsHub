@@ -17,8 +17,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Charlz Hub Tutor",
-  description: "Your best platform for tutoring services",
+  title: "Chiva TutorHub",
+  description: "Achieving Excellency: Your best platform for tutoring services",
 };
 
 export default function RootLayout({
