@@ -1,5 +1,5 @@
 [build]
-  base = "frontend/tutorshub"
+  base = "/"
   command = "npm install --legacy-peer-deps && npm run build"
   publish = "frontend/tutorshub/.next"
 
