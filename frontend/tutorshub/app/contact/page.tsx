@@ -12,7 +12,7 @@ export default function ContactPage() {
           <Container maxWidth="lg">
             <div className="text-center mb-16">
               <Typography 
-                variant="h1" 
+                variant="h2" 
                 className="text-4xl md:text-5xl mt-5 font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-600"
               >
                 Contact Us
