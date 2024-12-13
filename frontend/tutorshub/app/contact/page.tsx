@@ -13,13 +13,13 @@ export default function ContactPage() {
             <div className="text-center mb-16">
               <Typography 
                 variant="h2" 
-                className="text-4xl md:text-5xl mt-5 font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-600"
+                className="mt-5 font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-600"
               >
                 Contact Us
               </Typography>
                 <Typography 
                 variant="subtitle1" 
-                className="text-gray-600 max-w-2xl mx-auto"
+                className="text-gray-600 max-w-2xl text-center mx-auto"
                 >
                 Have questions? We&apos;d love to hear from you.
                 </Typography>

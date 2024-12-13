@@ -42,7 +42,10 @@ const BlogPost = async ({ params }: Props) => {
               className="mb-4 bg-purple-100 text-purple-700"
             />
             
-            <Typography variant="h1" className="text-4xl text-black font-bold mb-4">
+            <Typography 
+              variant="h1" 
+              className="text-2xl md:text-3xl lg:text-4xl text-black font-bold mb-4"
+            >
               {post.title}
             </Typography>
             

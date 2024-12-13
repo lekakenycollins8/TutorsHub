@@ -222,8 +222,8 @@ export const person = {
     },
     role:      'Professional Tutor',
     avatar:    '/pfp.jpg',
-    location:  'Globall',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Swahili']  // optional: Leave the array empty if you don't want to display languages
+    location:  'Global',        
+    languages: ['English', 'Swahili']  
 }
 
 export const social = [

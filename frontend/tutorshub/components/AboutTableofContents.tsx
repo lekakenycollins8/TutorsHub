@@ -43,7 +43,8 @@ const TableOfContents: React.FC<TableOfContentsProps> = ({ structure, about }) =
                 whiteSpace: 'nowrap',
                 pl: 3,
                 gap: 4,
-                display: { xs: 'none', md: 'flex' }
+                display: { xs: 'none', md: 'flex' },
+                mb: 8,
             }}
             direction="column"
         >

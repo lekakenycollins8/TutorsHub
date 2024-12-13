@@ -45,27 +45,27 @@ const Footer = () => {
             </Typography>
             <Stack direction="row" spacing={2}>
               <IconButton 
-                href="https://www.instagram.com/chiva_tutorhub/profilecard/?igsh=eGRsaHhkN2Y4eDls" 
-                target="_blank"
-                className="text-gray-300 hover:text-purple-400 transition-colors"
-                aria-label="Instagram"
+              href="https://www.instagram.com/chiva_tutorhub/profilecard/?igsh=eGRsaHhkN2Y4eDls" 
+              target="_blank"
+              className="text-white hover:text-purple-400 transition-colors"
+              aria-label="Instagram"
               >
-                <InstagramIcon />
+              <InstagramIcon />
               </IconButton>
               <IconButton 
-                href="tel:+254719575186" 
-                target="_blank"
-                className="text-gray-300 hover:text-purple-400 transition-colors"
-                aria-label="Phone"
+              href="tel:+254719575186" 
+              target="_blank"
+              className="text-white hover:text-purple-400 transition-colors"
+              aria-label="Phone"
               >
-                <PhoneIcon />
+              <PhoneIcon />
               </IconButton>
               <IconButton 
-                href="mailto:essayassignments23@gmail.com"
-                className="text-gray-300 hover:text-purple-400 transition-colors"
-                aria-label="Email"
+              href="mailto:essayassignments23@gmail.com"
+              className="text-white hover:text-purple-400 transition-colors"
+              aria-label="Email"
               >
-                <EmailIcon />
+              <EmailIcon />
               </IconButton>
             </Stack>
           </Grid>
